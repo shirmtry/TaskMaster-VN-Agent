@@ -1,0 +1,17 @@
+# Chạy CPU (test pipeline + demo)
+datasets>=2.18
+huggingface_hub>=0.23
+transformers>=4.44
+accelerate>=0.33
+gradio>=4.0
+llama-cpp-python>=0.2.90
+PyGithub>=2.3
+pyyaml
+jupyter
+nbconvert
+
+# Chạy GPU (bật khi train thật trên RTX 4060) — comment sẵn
+# unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git
+# trl
+# peft
+# bitsandbytes

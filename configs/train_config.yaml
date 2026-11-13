@@ -1,0 +1,23 @@
+# Cấu hình train — dùng khi CPU_MODE=False trên RTX 4060 32GB
+base_model_7b: "unsloth/Qwen2.5-7B-Instruct"
+base_model_3b: "unsloth/Qwen2.5-3B-Instruct"
+base_model_1_5b: "unsloth/Qwen2.5-1.5B-Instruct"
+
+max_seq_length: 2048
+lora_rank: 32
+lora_alpha: 32
+lora_dropout: 0.0
+
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4
+learning_rate: 2.0e-4
+max_steps: 500
+warmup_steps: 10
+logging_steps: 10
+optim: "adamw_8bit"
+
+output_dir: "outputs"
+merged_dir: "models/merged_16bit"
+gguf_dir: "models/gguf"
+gguf_quant: "q4_k_m"
+hf_repo: "YOUR_USERNAME/TaskMaster-VN-GGUF"

@@ -1,0 +1,15 @@
+data/*.jsonl
+data/*.parquet
+models/*
+!models/.gitkeep
+outputs/
+*.gguf
+*.safetensors
+*.bin
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+venv/
+.venv/
